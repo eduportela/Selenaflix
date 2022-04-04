@@ -1,0 +1,35 @@
+@media screen and (max-width:930px){
+    header .container{
+        display: flex;
+        flex-direction: column;
+        background-color: black;
+        align-items: center;
+    }
+    header nav a{
+        padding-bottom: 3px;
+    }
+    .carousel{
+        height: 20%;
+    } 
+}
+
+@media screen and (max-width:690px){
+    header .container{
+        display: flex;
+        flex-direction: column;
+        background-color: black;
+        align-items: center;
+    }
+    header nav a{
+        display: none;
+    }
+    .carousel{
+        height: 20%;
+    } 
+    .titulo{
+        font-size: 70px;
+    }
+    .main-page .description{
+        width: 60%;
+    }
+}

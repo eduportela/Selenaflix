@@ -12,11 +12,11 @@ body {
 
 .background{
   background-image: linear-gradient(to right,
-        rgba(0, 0, 0, 2000),
+        rgb(0, 0, 0),
         rgba(0, 0, 0, 0) 100%),
-      url("../img/stageh.jpg");
+      url("./img2/revelacion.jpg");
       background-size: cover;
-      background-position-y: 38%;
+      background-position: 0px 40%;
 }
 
 header .container {
@@ -41,7 +41,7 @@ header ul{
 }
 header nav a {
   text-decoration: none;
-  color: rgb(161, 161, 161);
+  color: rgb(29, 29, 29);
   transition: 0.5s all;
 }
 
@@ -70,7 +70,13 @@ main{
 height: 500px;
 }
  
-
+.title{
+  font-size: 60px;
+  font-family: fantasy;
+  margin-top: 150px;
+  margin-bottom: 70px;
+  font-weight: 400;
+}
 
 .main-page {
   display: flex;

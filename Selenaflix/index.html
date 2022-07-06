@@ -16,18 +16,39 @@
 <body>
 
     <!--Header-->
-
+<div class="background">
     <header>
         <div class="container">
             <div class="logo"><img src="./img/selenaflix-logo.png" width="200px" height="70px"></div>
-            <nav>
-                <a href="index.html">Home</a>
-                <a href="Revelacion.html">Revelacion</a>
-                <a href="Rare.html">Rare</a>
-                <a href="Revival.html">Revival</a>
-                <a href="StarsD.html">Stars Dance</a>
-                <a href="Ft.html">Featurings</a>
-                <a href="ts.html">The Scene</a>
+            <nav class="navbar">
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a class="nav-link" href="http://selenaflix.netlify.app">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/pages/Revelacion.html">Revelacion</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/pages/Rare.html">Rare</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/pages/Revival.html">Revival</a>
+                    </li>
+                    <li  class="nav-item">
+                        <a class="nav-link" href="/pages/StarsD.html">Stars Dance</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/pages/Ft.html">Featurings</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/pages/ts.html">The Scene</a>
+                    </li>
+                </ul>
+                <div class="hamburguer">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
             </nav>
 
         </div>
@@ -38,7 +59,7 @@
     <main>
         <div class="main-page">
             <div class="container">
-                <h3 class="titulo">Selena Gomez</h3>
+                <img id="img" src="./img/signature.png" alt="signature">
                 <p class="description">Selena Marie Gomez... atriz, compositora, cantora, empresária e produtora.
                     Sua família tem origem mexicana, e ela foi nascida e criada no Texas, EUA. Começou sua carreira com apenas 7 anos em Barney,
                      e aos 14 já conquistou o primeiro papel de uma produção da Disney.
@@ -56,10 +77,10 @@
             </div>
         </div>
     </main>
-
+</div>
     <!--Carousel 1-->
 
-    <section>
+    <section id="blur">
         <div class="carousel">
             <h2 class="title">Get Started</h2>
             <div class="tbtile swiper-container">
@@ -192,15 +213,39 @@
         const swiper = new Swiper('.swiper-container', {
               // Optional parameters
         spaceBetween: 24,
-        slidesPerView: 5.2,
+        slidesPerView: 1.8,
         loop: false,
         freeMode: false,
         loopAdditionalSlides: 0,
         speed: 500,
-  });
+        rewind: true,
+   // Responsive breakpoints
+            breakpoints: {
+                
+                // when window width is >= 442px
+                442: {
+                    slidesPerView: 2,
+                },
+                // when window width is >= 720px
+                720: {
+                    slidesPerView: 3.1,
+                    spaceBetween: 18,
+                },
+                // when window width is >= 930px
+                930: {
+                    slidesPerView: 3.6,
+                },
+                // when window width is >= 1440px
+                1440: {
+                    slidesPerView: 5.2,
+                }
+            }
+        })
 
    
       </script>
+      <script src="/js/script.js">
+    </script>
 
 </body>
 </html>
